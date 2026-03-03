@@ -6,14 +6,17 @@ peso = float(input('digite sua peso '))
 
 imc = peso / (altura * altura)
 
-if imc < 25:
-    print('seu imc está normal')
+if imc < 18.5:
+    print('voce esta com baixo imc')
+else:
+    if imc < 25:
+        print('seu imc está normal')
+    else:
+        if imc < 30:
+            print('voce está com sobrepeso')
+        else:
+            #if imc >= 30: nao é errado porém aumenta um teste
+            print('voce está obeso')
 
-if imc > 30:
-    print('voce está obeso')
-
-if imc >= 25:
-    print('voce está com sobrepeso')
-#para pensar 
 
 
