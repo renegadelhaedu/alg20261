@@ -4,9 +4,9 @@
 altura = float(input('digite sua altura '))
 peso = float(input('digite sua peso '))
 
-imc = peso / (altura * altura)
+imc = peso / (altura * altura) #supondo que o imc 21
 
-if imc < 18.5:
+if imc < 18.5: #so entra no if se a condicao for True
     print('voce esta com baixo imc')
 else:
     if imc < 25:
