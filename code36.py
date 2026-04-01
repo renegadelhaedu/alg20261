@@ -1,10 +1,6 @@
-#operadores lógicos
-#negação lógica   not
-resposta = input('voce esta conectado a internet?')
-if resposta == 'sim':
-    status = True
-else:
-    status = False
+numero = 33
 
-if not status:
-    print('mensagem')
+if numero % 2 == 0:
+    print('par')
+else:
+    print('impar')
