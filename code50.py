@@ -1,10 +1,25 @@
-#crédito 
+#faça um algoritmo em python que leia o nome e
+#as duas notas de cada aluno da turma(28 alunos)
+#informe ao final a média da turma e o nome
+#do aluno com maior média da turma
 
-valor = float(input('tu quer quanto? '))
-meses = 0
-while meses < 12:
-    #valor = (valor * 0.18) + valor
-    valor = valor * 1.18
-    meses = meses + 1
+maior_media = 0
+nome_maior = 'maria'
+qtde = 0
+soma = 0
+while qtde < 28:
+    nome = input('qual seu nome? ')
+    nota1 = float(input('diga a nota '))
+    nota2 = float(input('diga a nota '))
+    media = (nota1 + nota2) / 2
+    if media > maior_media:
+        maior_media = media
+        nome_maior = nome
 
-print('o valor final foi ', valor)
+    soma = soma + media
+    qtde = qtde + 1
+
+mm = soma / qtde
+print(mm)
+print(nome_maior)
+print(maior_media)

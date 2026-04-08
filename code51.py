@@ -1,7 +1,7 @@
 sim = 0
 nao = 0
 nome = ''
-while sim < 5 and nome != 'kamile':
+while sim < 5 and (nome != 'kamile' and resposta != 'sim') :
     nome = input('qual teu nome? ')
     resposta = input('bora dançar? cuida!')
     if resposta == 'sim':
