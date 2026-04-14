@@ -1,6 +1,5 @@
 nome = ''
-perdeu = Fa
-lse 
+perdeu = False 
 while nome != 'caderno':
     le = input('informe uma letra: ')
     if le == 'k' or le == 'y' or le == 'w':
