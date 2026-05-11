@@ -34,6 +34,11 @@ competidores[2] = 'arthur'
 #verifica se o item está dentro das chaves deste dicionário
 #print('higor' in competidores)
 
+nome = input('qual o nome dele? ')
+numero_insc = int(input('qual o número de inscrição dele? '))
+competidores[numero_insc] = nome
+
+
 for chave in competidores:
     if competidores[chave] == 'joao vitor':
         print('achei o homi')
