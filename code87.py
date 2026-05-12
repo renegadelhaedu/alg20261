@@ -1,6 +1,7 @@
 #dicionário (mapa) dict
 #estrutura de dados
 #par chave:valor
+#mutável
 #chave não pode ser uma estrutura de dados
 #chaves são únicas
 #deve-se controlar a alteração dos valores via chave
@@ -38,7 +39,7 @@ nome = input('qual o nome dele? ')
 numero_insc = int(input('qual o número de inscrição dele? '))
 competidores[numero_insc] = nome
 
-
+#iterar é percorrer uma coleção ou estrutura de dados
 for chave in competidores:
     if competidores[chave] == 'joao vitor':
         print('achei o homi')
