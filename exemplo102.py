@@ -2,7 +2,6 @@ import requests
 
 
 def buscar_cep(cep):
-    # Remove dots and hyphens to ensure only numbers are sent
     cep = cep.replace("-", "").replace(".", "").strip()
 
     url = f'https://viacep.com.br/ws/{cep}/json/'
